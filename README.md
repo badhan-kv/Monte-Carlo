@@ -1,0 +1,5 @@
+# Monte-Carlo
+Created a python script to estimate uncertainity of measurements using Monte-Carlo simulation.
+The measurement data consists of points in a 3D coordinate system and the final resultant output is a plane fitted using least square method for these datapoints.
+The data is collected by measuring values in each axis of the coordinate system. Each axis has varried degree of error in measurement. This varried error in each axis (direction) is quantified within certain range. For each value of each axis of the datapoints, a random value within the error range of the respective axis is added to it to create a new dataset. Plane is fitted through this newdataset and compared with original dataset, particularly the angle bwtween the planes, determined by calculating the angle between the normal vectors the new and original plane.
+This is done many times (1 million times) and value of the angle between the new and the original plane is recorded to estimate the measurement uncertainity range which was found to be ±0.03°.
